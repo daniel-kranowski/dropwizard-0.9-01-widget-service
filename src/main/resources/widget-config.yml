@@ -1,0 +1,29 @@
+usersAndPasswords:
+    charlie:
+        username: charlie
+        password: hello
+        roles:
+          - USER
+    admin:
+        username: admin
+        password: admin
+        roles:
+          - ADMIN
+
+widgets:
+    - name: Zero-Drift Operational Amplifier
+      color: black
+      size: 5
+    - name: 650MHz Differential ADC Driver
+      color: green
+      size: 13
+
+server:
+    gzip:
+        enabled: true
+    type: simple
+    applicationContextPath: /
+    connector:
+        type: http
+        port: 8080
+
